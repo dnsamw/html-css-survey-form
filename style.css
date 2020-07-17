@@ -1,0 +1,137 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+body{
+	display: block;
+	font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(32, 0, 11, 0.45), rgba(72, 1, 35, 0.5) ), url("img/mit-main-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+.description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+h1, p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+element.style {
+}
+
+@media (min-width: 480px){
+form {
+    padding: 2.5rem;
+}
+}
+
+
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+.header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+}
+
+@media (min-width: 480px){
+form {
+    padding: 2.5rem;
+}
+}
+
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}

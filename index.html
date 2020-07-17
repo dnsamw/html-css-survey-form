@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Social Media Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1 id="title">Online Social Media Survey by Dan Corp.</h1>
+<p id="description">Thank you for taking the time and effort in making social platforms better and secure.</p>
+
+<div class="container">
+	<div id="wrapper">
+<form id="survey-form">
+	<div class="form-group">
+		<label for="name">Name</label>
+		<input class="form-control" type="text" id="name" name="name" placeholder="Enter your name : ex; John Doe" required>
+	</div>
+	<div class="form-group">
+		<label for="email">E-mail</label>
+		<input class="form-control" type="email" id="email" name="email" placeholder="example@domain.com" required>
+	</div>
+	<div class="form-group">
+		<label for="number">Age</label>
+		<input class="form-control" type="number" min="16" max="80" id="number" name="number" placeholder="15+" required>
+	</div>
+	<div class="form-group">
+		<p>Why do you think people should use social networking websites ?</p>
+		<select id="dropdown" name="" class="form-control" required="">
+			<option value="get-to-know-strangers">To get to know strangers</option>
+			<option value="connect-with-known-people">To connect with acquaintance and friends</option>
+			<option value="show-off">To let people know how their lifestyles are</option>
+			<option value="promote-business">To promote their business</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<p>Which of the following social networking websites do you currently have an account with? <small>(check all that apply)</small></p>
+		<label>
+			<input type="checkbox" class="input-checkbox" name="" value="facebook"> facebook
+		</label>
+		<label>
+			<input type="checkbox" class="input-checkbox" name="" value="twittr"> twitter
+		</label>
+		<label>
+			<input type="checkbox" class="input-checkbox" name="" value="vk"> vk
+		</label>
+		<label>
+			<input type="checkbox" class="input-checkbox" name="" value="snapchat"> Snapchat
+		</label>
+	</div>
+
+	<div class="form-group">
+		<p>In a typical week, how likely are you to use social networking websites?</p>
+		<label>
+			<input type="radio" name="radio-select" value="" class="input-radio"> Extremely likely
+		</label>
+		<label>
+			<input type="radio" name="radio-select" value="" class="input-radio"> Very likely
+		</label>
+		<label>
+			<input type="radio" name="radio-select" value="" class="input-radio"> Moderately likely
+		</label>
+		<label>
+			<input type="radio" name="radio-select" value="" class="input-radio"> Slightly likely
+		</label>
+		<label>
+			<input type="radio" name="radio-select" value="" class="input-radio"> Not at all likely
+		</label>
+	</div>
+
+	
+
+	<div class="form-group">
+		<p>Please feel free to leave a comment if you have any suggestions or complaints.</p>
+		<textarea class="input-textarea" id="comment" name="comment" placeholder="Enter your comment here..."></textarea>
+	</div>
+
+	<div class="form-group">
+		<input type="submit" name="submit" class="submit-button" value="Submit" id="submit">
+	</div>
+</form>
+</div>
+</div>
+
+<footer>
+	<!-- <hr> -->
+	<small>Created by <a href="https://www.freecodecamp.org/dansmarawicky" target="_blank">Dan Samarawicky @freeCodeCamp</a> | 2019 | Responsive Web Design Projects 2 - Build a Survey Form</small>
+	</footer>
+
+</body>
+</html>
